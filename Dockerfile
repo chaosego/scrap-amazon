@@ -1,5 +1,5 @@
 # Usar una imagen oficial de Node.js
-FROM node:18-slim
+FROM node:22-slim
 
 # Establecer el directorio de trabajo
 WORKDIR /usr/src/app
@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Exponer el puerto que la aplicación usará
-EXPOSE 8000
+EXPOSE 3469
 
 # Comando para iniciar la aplicación
 CMD [ "npm", "start" ]
